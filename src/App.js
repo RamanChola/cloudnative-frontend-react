@@ -12,24 +12,14 @@ import { AuthContext } from "./pages/Auth/auth-context";
 import Auth from "./pages/Auth/Auth";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-import SignIn from "./pages/Auth/components/SignIn"
-import Signup from "./pages/Auth/components/Signup"
+import SignIn from "./pages/Auth/components/SignIn";
+import Signup from "./pages/Auth/components/Signup";
 import Chat from "./pages/Chat";
 
 const Homepage = React.lazy(() => import("./pages/Homepage"));
 const queryClient = new QueryClient();
 function App() {
-  const {
-    isLoggedIn,
-    token,
-    login,
-    logout,
-    userId,
-    startDate,
-    setStartDate,
-    endDate,
-    setEndDate,
-  } = useAuth();
+  const { isLoggedIn, token, login, logout, userId, username } = useAuth();
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -40,10 +30,7 @@ function App() {
           token: token,
           login: login,
           logout: logout,
-          startDate: startDate,
-          setStartDate: setStartDate,
-          endDate: endDate,
-          setEndDate: setEndDate,
+          username: username,
         }}
       >
         <Router>

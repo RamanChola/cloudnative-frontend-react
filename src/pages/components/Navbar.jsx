@@ -22,7 +22,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import DatePicker from "react-datepicker";
 import "./navbar.css";
 
-export default function NavBar() {
+export default function NavBar({ disconnectUser }) {
   const auth = useContext(AuthContext);
   let history = useHistory();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -42,6 +42,7 @@ export default function NavBar() {
 
   const LogoutClickHandler = (event) => {
     auth.logout();
+    disconnectUser();
     openDrawer && handleDrawerClose();
     history.push("/");
   };
@@ -73,6 +74,7 @@ export default function NavBar() {
               transition
               disablePortal
               placement="bottom"
+              style={{ position: "relative", zIndex: "3" }}
             >
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
@@ -84,6 +86,7 @@ export default function NavBar() {
                         LogoutClickHandler();
                         handleClose();
                       }}
+                      style={{ position: "relative", zIndex: "3" }}
                     >
                       Logout
                     </MenuItem>

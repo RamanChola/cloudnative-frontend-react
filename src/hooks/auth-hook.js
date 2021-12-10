@@ -1,16 +1,19 @@
 import { useState, useCallback, useEffect } from "react";
 
 export const useAuth = () => {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [token, setToken] = useState(false);
   const [userId, setUserId] = useState("");
-  const login = useCallback((userId, token) => {
+  const [username, setUsername] = useState("");
+  const login = useCallback((userId, username, token) => {
     setIsLoggedIn(true);
     setToken(token);
     setUserId(userId);
-    localStorage.setItem("userData", JSON.stringify({ userId, token }));
+    setUsername(username);
+    localStorage.setItem(
+      "userData",
+      JSON.stringify({ userId, username, token })
+    );
   }, []);
 
   const logout = useCallback(() => {
@@ -23,19 +26,16 @@ export const useAuth = () => {
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem("userData"));
     if (storedData && storedData.token) {
-      login(storedData.userId, storedData.token);
+      login(storedData.userId, storedData.token, storedData.username);
     }
   }, [login]);
 
   return {
-    startDate,
-    setStartDate,
-    endDate,
-    setEndDate,
     isLoggedIn,
     token,
     login,
     logout,
     userId,
+    username,
   };
 };

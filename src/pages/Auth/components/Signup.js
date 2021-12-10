@@ -82,7 +82,11 @@ const SignUp = ({ handleChange }) => {
           lastname: event.lastName,
         }
       );
-      auth.login(responseData.data.userId, responseData.data.token);
+      auth.login(
+        responseData.data.userId,
+        responseData.data.username,
+        responseData.data.token
+      );
       console.log(responseData.data);
       history.push("/");
     } catch (error) {

@@ -7,9 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("https://www.transparenttextures.com/patterns/embossed-paper.png");
   height: 100vh;
+  overflow-y: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
 }

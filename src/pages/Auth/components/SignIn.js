@@ -56,7 +56,11 @@ const SignIn = ({ handleChange }) => {
           password: event.password,
         }
       );
-      auth.login(responseData.data.userId, responseData.data.token);
+      auth.login(
+        responseData.data.userId,
+        responseData.data.username,
+        responseData.data.token
+      );
       history.push("/");
     } catch (error) {
       setError(true);
