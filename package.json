@@ -45,10 +45,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-transition-group": "^4.4.2",
-    "stream-chat": "^5.0.1",
-    "stream-chat-react": "^6.12.2",
-    "streamedian": "git://github.com/Streamedian/html5_rtsp_player.git",
-    "styled-components": "^5.3.3",
+    "survey-react": "^1.9.1",
     "underscore": "^1.13.1",
     "web-vitals": "^2.1.2",
     "yup": "^0.32.11"
