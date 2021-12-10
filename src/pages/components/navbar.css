@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0 0 3px 3px;
+}
+
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-link {
+    font-size: 14px;
+    margin: 0 20px !important;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 15px;
+    gap: 380px;
+}

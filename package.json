@@ -1,0 +1,77 @@
+{
+  "name": "sprh-adani-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/date-fns": "^2.11.0",
+    "@date-io/moment": "^2.11.0",
+    "@devexpress/dx-react-core": "^2.7.6",
+    "@devexpress/dx-react-grid": "^2.7.6",
+    "@devexpress/dx-react-grid-material-ui": "^2.7.6",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@hookform/resolvers": "^2.8.3",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/data-grid": "^4.0.0-alpha.37",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "@mui-treasury/components": "^1.4.0",
+    "@mui-treasury/styles": "^1.7.0",
+    "@mui-treasury/layout": "5.0.0-alpha.21",
+    "@mui-treasury/mockup": "5.0.0-alpha.5",
+    "@mui/icons-material": "^5.2.0",
+    "@mui/lab": "^5.0.0-alpha.56",
+    "@mui/material": "^5.2.0",
+    "@mui/x-data-grid": "^5.0.1",
+    "@progress/kendo-licensing": "^1.2.1",
+    "@progress/kendo-react-dateinputs": "^4.12.0",
+    "@progress/kendo-react-intl": "^4.12.0",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
+    "date-fns": "^2.26.0",
+    "material-table": "^1.61.0",
+    "moment": "^2.29.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-datepicker": "^4.3.0",
+    "react-dom": "^17.0.2",
+    "react-faq-component": "^1.3.1",
+    "react-hook-form": "^7.20.2",
+    "react-query": "^3.33.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.2",
+    "streamedian": "git://github.com/Streamedian/html5_rtsp_player.git",
+    "underscore": "^1.13.1",
+    "web-vitals": "^2.1.2",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
