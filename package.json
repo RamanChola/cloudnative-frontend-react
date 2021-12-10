@@ -18,9 +18,9 @@
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/pickers": "^3.3.10",
     "@mui-treasury/components": "^1.4.0",
-    "@mui-treasury/styles": "^1.7.0",
     "@mui-treasury/layout": "5.0.0-alpha.21",
     "@mui-treasury/mockup": "5.0.0-alpha.5",
+    "@mui-treasury/styles": "^1.7.0",
     "@mui/icons-material": "^5.2.0",
     "@mui/lab": "^5.0.0-alpha.56",
     "@mui/material": "^5.2.0",
@@ -46,6 +46,7 @@
     "react-scripts": "4.0.3",
     "react-transition-group": "^4.4.2",
     "streamedian": "git://github.com/Streamedian/html5_rtsp_player.git",
+    "survey-react": "^1.9.1",
     "underscore": "^1.13.1",
     "web-vitals": "^2.1.2",
     "yup": "^0.32.11"
