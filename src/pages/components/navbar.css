@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #fff;
+    background-color: #fff !important;
     box-shadow: none;
     border-radius: 0 0 3px 3px;
 }
