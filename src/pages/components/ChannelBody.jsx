@@ -1,34 +1,15 @@
 import React from "react";
 import { ChannelHeader, MessageInput, MessageList } from "stream-chat-react";
 import styled from "styled-components";
-
-const Container = styled.div`
-  width: 100%;
-  height: 100vh;
-
-  .str-chat-header-livestream {
-    width: 100%;
-    height: 50px;
-  }
-
-  .str-chat__list {
-    height: 600px;
-  }
-
-  .str-chat__input-flat-wrapper {
-    position: absolute;
-    bottom: -5px;
-    width: 100%;
-  }
-`;
+import "./channelbody.css";
 
 const ChannelBody = () => {
   return (
-    <Container>
+    <div className="channel-body">
       <ChannelHeader />
       <MessageList />
       <MessageInput />
-    </Container>
+    </div>
   );
 };
 

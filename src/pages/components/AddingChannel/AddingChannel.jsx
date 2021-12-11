@@ -18,7 +18,7 @@ const Container = styled.div`
       border: 1px solid #333333;
       &.active {
         background: #333333;
-        color: white;
+        color: white !important;
       }
     }
   }
@@ -37,12 +37,15 @@ const AddingChannel = ({ onClose }) => {
           <button
             className={activeTab === tab.id ? "active" : undefined}
             key={tab.id}
+            style={{ color: "#333333" }}
             onClick={() => setActiveTab(tab.id)}
           >
             {tab.name}
           </button>
         ))}
-        <button onClick={onClose}>Close</button>
+        <button onClick={onClose} style={{ color: "#333333" }}>
+          Close
+        </button>
       </div>
       {activeTab === "browse" && <BrowserChannels onClose={onClose} />}
       {activeTab === "create" && <CreateChannel onClose={onClose} />}

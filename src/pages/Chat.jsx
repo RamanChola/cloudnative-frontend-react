@@ -16,17 +16,7 @@ import "stream-chat-react/dist/css/index.css";
 import CustomChannelList from "./components/CustomChannelList";
 import ChannelBody from "./components/ChannelBody";
 import AddingChannel from "./components/AddingChannel/AddingChannel";
-
-const Container = styled.div`
-  display: flex;
-  overflow: none;
-  .left-column {
-    width: 300px;
-  }
-  .right-column {
-    flex: 1;
-  }
-`;
+import "./chat.css";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -69,7 +59,7 @@ const GroupChat = () => {
     <>
       <Navbar disconnectUser={() => chatClient.disconnectUser()} />
       <Chat client={chatClient} theme={"messaging light"}>
-        <Container>
+        <div className="box">
           <div className="left-column">
             <CustomChannelList onClickAdd={() => setAddingTeamChannel(true)} />
           </div>
@@ -82,7 +72,7 @@ const GroupChat = () => {
               )}
             </Channel>
           </div>
-        </Container>
+        </div>
       </Chat>
     </>
   );

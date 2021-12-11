@@ -1,0 +1,27 @@
+.channel-body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.str-chat-header-livestream {
+    width: 100%;
+    height: 70px;
+}
+
+.str-chat__list {
+    height: 537px;
+}
+
+.str-chat__input-flat-wrapper {
+    margin-top: 0px;
+    width: 100%;
+}
+
+.quoted-message-preview {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    bottom: 60px;
+}

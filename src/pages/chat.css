@@ -1,0 +1,12 @@
+.box {
+    display: flex;
+    overflow: none;
+}
+
+.left-column {
+    width: 300px;
+}
+
+.right-column {
+    flex: 1;
+}
