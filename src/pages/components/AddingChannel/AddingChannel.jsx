@@ -17,8 +17,9 @@ const Container = styled.div`
       cursor: pointer;
       border: 1px solid #333333;
       &.active {
-        background: #333333;
+        background-image: url(https://i.pinimg.com/474x/67/d4/00/67d400eff9a3061de496f280c05b39bf.jpg);
         color: white !important;
+        box-shadow: 0 1px 1px 0 red;
       }
     }
   }
@@ -37,13 +38,13 @@ const AddingChannel = ({ onClose }) => {
           <button
             className={activeTab === tab.id ? "active" : undefined}
             key={tab.id}
-            style={{ color: "#333333" }}
+            style={{ color: "#ffffff" }}
             onClick={() => setActiveTab(tab.id)}
           >
             {tab.name}
           </button>
         ))}
-        <button onClick={onClose} style={{ color: "#333333" }}>
+        <button onClick={onClose} style={{ color: "#ffffff" }}>
           Close
         </button>
       </div>

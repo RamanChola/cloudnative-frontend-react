@@ -3,7 +3,9 @@ const ChannelItem = ({ onJoin, channel }) => {
     <div
       style={{
         display: "flex",
-        border: "2px solid #ccc",
+        border: "2px solid #000",
+        backgroundColor:"transparent",
+        backdropFilter: "blur(5px)",
         borderRadius: "10px",
         marginBottom: "20px",
         padding: "20px",
@@ -25,19 +27,19 @@ const ChannelItem = ({ onJoin, channel }) => {
         />
       </div>
       <div style={{ marginLeft: "20px"}}>
-        <span style={{ color: "#333", fontWeight: "bold"}}>
+        <span style={{ color: "#fff", fontWeight: "bold"}}>
           {channel?.data?.name}
         </span>
-        <p className="desc">{channel?.data?.desc || "No description"}</p>
+        <p style={{color:"grey"}}>{channel?.data?.desc || "No description"}</p>
       </div>
       <button
         onClick={() => onJoin(channel?.id)}
         style={{
           width: "70px",
           height: "40px",
-          border: "1px solid #333",
+          border: "1px solid grey",
           padding: "10px",
-          color: "#333",
+          color: "#ffffff",
           marginLeft: "auto",
           "&:hover": {
             backroundColor: "#333",

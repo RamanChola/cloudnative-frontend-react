@@ -11,6 +11,7 @@
 .nav-link {
     font-size: 14px;
     margin: 0 20px !important;
+    margin-left: auto;
 }
 
 .body-container {

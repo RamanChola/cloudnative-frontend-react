@@ -42,7 +42,9 @@ export default function NavBar({ disconnectUser }) {
 
   const LogoutClickHandler = (event) => {
     auth.logout();
-    disconnectUser();
+    if (disconnectUser) {
+      disconnectUser();
+    }
     openDrawer && handleDrawerClose();
     history.push("/");
   };
@@ -56,6 +58,7 @@ export default function NavBar({ disconnectUser }) {
         <Button
           component={NavLink}
           className="nav-link"
+          style={{ marginLeft: "auto" }}
           exact
           // activeStyle={styles}
           to={"/chat"}
