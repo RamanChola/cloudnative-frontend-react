@@ -36,15 +36,21 @@ const CreateChannel = ({ onClose }) => {
       }}
     >
       <div className="input-group">
-        <label htmlFor="name">Channel Name</label>
+        <label htmlFor="name" className="create-channel-header">
+          Channel Name
+        </label>
         <input id="name" onChange={(e) => setName(e.target.value)} />
       </div>
       <div className="input-group">
-        <label htmlFor="image">Channel Image URL</label>
+        <label htmlFor="image" className="create-channel-header">
+          Channel Image URL
+        </label>
         <input id="image" onChange={(e) => setImage(e.target.value)} />
       </div>
       <div className="input-group">
-        <label htmlFor="desc">Channel Description</label>
+        <label htmlFor="desc" className="create-channel-header">
+          Channel Description
+        </label>
         <input id="desc" onChange={(e) => setDesc(e.target.value)} />
       </div>
       <div className="submit">
