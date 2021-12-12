@@ -31,7 +31,6 @@ const Homepage = () => {
   defaultThemeColors["$main-hover-color"] = "#6fe06f";
   defaultThemeColors["$header-color"] = "#7ff07f";
   defaultThemeColors["$text-color"] = "#4a4a4a";
-  defaultThemeColors["$label"] = "#4a4a4a";
   defaultThemeColors["$header-background-color"] = "#4a4a4a";
   defaultThemeColors["$body-container-background-color"] = "#f8f8f8";
 

@@ -54,9 +54,9 @@ export default function NavBar({ disconnectUser }) {
 			<Toolbar>
 				<NavLink
 					to='/'
-					style={{ textDecoration: "none", color: "black", fontSize: "18px" }}
+					style={{ textDecoration: "none", color: "black", fontSize: "28px" }}
 				>
-					Name
+					Flapped
 				</NavLink>
 				<Button
 					component={NavLink}
@@ -71,7 +71,7 @@ export default function NavBar({ disconnectUser }) {
 				<div className='nav-links'>
 					<div className='body-container'>
 						<IconButton onClick={handleMenu}>
-							<AccountCircle style={{ color: "white" }} />
+							<AccountCircle />
 						</IconButton>
 						<Popper
 							anchorEl={anchorEl}

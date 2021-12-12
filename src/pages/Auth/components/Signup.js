@@ -74,7 +74,7 @@ const SignUp = ({ handleChange }) => {
     try {
       // eslint-disable-next-line
       const responseData = await axios.post(
-        `http://localhost:5000/api/users/signup`,
+        `${process.env.REACT_APP_BACKEND_URL}/users/signup`,
         {
           email: event.email,
           password: event.password,

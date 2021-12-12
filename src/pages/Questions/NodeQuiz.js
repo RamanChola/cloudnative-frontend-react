@@ -22,7 +22,7 @@ export const node = {
 						{
 							type: "html",
 							name: "quiz_intro",
-							html: "<article class='intro'>    <h1 class='intro__heading intro__heading--income title'>                     node.js Development Quiz              </h1>    <div class='intro__body wysiwyg'>       <p> You are about to start quiz which contains questions related to web development. </p>   <p>You have 30 seconds for every page and 60 seconds for the whole survey of 3 questions.</p>  <p>Please click on <b>'Start Quiz'</b> button when you are ready.</p>  </div> </article>",
+							html: "<article class='intro'>    <h1 class='intro__heading intro__heading--income title'>                     Node.js Development Quiz              </h1>    <div class='intro__body wysiwyg'>       <p> You are about to start quiz which contains questions related to web development. </p>   <p>You have 30 seconds for every page and 60 seconds for the whole survey of 3 questions.</p>  <p>Please click on <b>'Start Quiz'</b> button when you are ready.</p>  </div> </article>",
 						},
 					],
 					name: "panel1",
