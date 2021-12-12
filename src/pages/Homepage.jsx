@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import "react-datepicker/dist/react-datepicker.css";
 import "./homepage.css";
-import { useHistory } from "react-router-dom";
-import { AuthContext } from "./Auth/auth-context";
+// import { useHistory } from "react-router-dom";
+// import { AuthContext } from "./Auth/auth-context";
 
 import "survey-react/survey.css";
 import * as Survey from "survey-react";
@@ -16,11 +16,11 @@ import { mongodb } from "./Questions/MongoDBQuiz";
 import { node } from "./Questions/NodeQuiz";
 import { react } from "./Questions/ReactQuiz";
 
-import { display, margin, textAlign } from "@mui/system";
+// import { display, margin, textAlign } from "@mui/system";
 
 const Homepage = () => {
-  const history = useHistory();
-  const auth = React.useContext(AuthContext);
+//   const history = useHistory();
+//   const auth = React.useContext(AuthContext);
 
   const [quizType, setQuizType] = useState(javascript);
 

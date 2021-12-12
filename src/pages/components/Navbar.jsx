@@ -10,16 +10,16 @@ import { useHistory } from "react-router-dom";
 import Paper from "@material-ui/core/Paper";
 import Popper from "@material-ui/core/Popper";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import axios from "axios";
+// import axios from "axios";
 import MenuList from "@material-ui/core/MenuList";
 import {
-	createTheme,
+	// createTheme,
 	IconButton,
-	MuiThemeProvider,
-	Typography,
+	// MuiThemeProvider,
+	// Typography,
 } from "@material-ui/core";
-import SearchIcon from "@mui/icons-material/Search";
-import DatePicker from "react-datepicker";
+// import SearchIcon from "@mui/icons-material/Search";
+// import DatePicker from "react-datepicker";
 import "./navbar.css";
 
 export default function NavBar({ disconnectUser }) {

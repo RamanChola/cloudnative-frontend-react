@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { ChannelList, useChatContext } from "stream-chat-react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import ChannelListContainer from "./ChannelListContainer";
 import "./customchannellist.css";
 

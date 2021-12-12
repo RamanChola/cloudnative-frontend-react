@@ -1,6 +1,6 @@
 import React from "react";
 import { ChannelHeader, MessageInput, MessageList } from "stream-chat-react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import "./channelbody.css";
 
 const ChannelBody = () => {
