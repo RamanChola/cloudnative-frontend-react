@@ -1,4 +1,6 @@
 import React, { Suspense } from "react";
+import alanBtn from "@alan-ai/alan-sdk-web";
+import { useEffect } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -20,6 +22,20 @@ const Homepage = React.lazy(() => import("./pages/Homepage"));
 const queryClient = new QueryClient();
 function App() {
   const { isLoggedIn, token, login, logout, userId, username } = useAuth();
+
+  // Adding the Alan button
+  useEffect(() => {
+    alanBtn({
+      key: "2dd7f7bf226d3ca7179d8f6d028720062e956eca572e1d8b807a3e2338fdd0dc/stage",
+      onCommand: (commandData) => {
+        if (commandData.command === "addName") {
+        }
+      },
+    });
+  }, []);
+  // return (
+  // ...
+  // );
 
   return (
     <QueryClientProvider client={queryClient}>
