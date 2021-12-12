@@ -30,6 +30,9 @@ const CreateChannel = ({ onClose }) => {
         margin: "50px auto",
         padding: "20px",
         borderRadius: "10px",
+        backgroundImage:
+          "url(https://i.pinimg.com/474x/67/d4/00/67d400eff9a3061de496f280c05b39bf.jpg)",
+        backdropFilter: "blur(5px)",
       }}
     >
       <div className="input-group">

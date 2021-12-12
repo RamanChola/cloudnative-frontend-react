@@ -1,6 +1,6 @@
 .custom-box {
     height: 85vh;
-    background-color: #333;
+    background-image: url(https://wallpaperaccess.com/full/141914.jpg);
     position: absolute;
     z-index: 2;
     padding: 20px 10px;
@@ -24,6 +24,15 @@ button {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.str-chat__channel-list-messenger {
+    background-image: url(https://i.pinimg.com/474x/67/d4/00/67d400eff9a3061de496f280c05b39bf.jpg)
+}
+
+.dark.str-chat .str-chat__channel-preview-messenger--active {
+    background: var(#fff);
+    box-shadow: 0 1px 1px 0 red;
 }
 
 .str-chat {

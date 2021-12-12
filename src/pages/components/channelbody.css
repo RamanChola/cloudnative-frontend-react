@@ -22,7 +22,58 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    /* background-image: url(https://wallpaperaccess.com/full/141914.jpg); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    backdrop-filter: blur(5px);
     bottom: 50px;
     padding-bottom: 100px;
+}
+
+.str-chat__input-flat-quoted .quoted-message-preview-header {
+    color: #fff;
+}
+
+.quoted-message-preview-content-inner {
+    color: #fff;
+}
+
+.str-chat__input-flat-quoted .quoted-message-preview-content {
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.messaging.str-chat.dark .str-chat__header-livestream {
+    /* background-image: url(https://i.pinimg.com/474x/67/d4/00/67d400eff9a3061de496f280c05b39bf.jpg); */
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.str-chat__li .quoted-message-inner {
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.str-chat__li .quoted-message.mine .quoted-message-inner {
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.str-chat {
+    background-image: url(https://wallpaperaccess.com/full/141914.jpg);
+
+}
+
+.dark.str-chat .str-chat__message-simple-text-inner {
+    background-color: black;
+    color: #fff;
+}
+
+.dark.str-chat .str-chat__message-actions-box button {
+    background-color: black;
+    color: #fff;
+}
+
+.dark.str-chat .str-chat__message-actions-box button:hover {
+    background-color: black;
+    color: red;
 }

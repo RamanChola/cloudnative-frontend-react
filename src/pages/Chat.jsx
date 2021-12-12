@@ -58,7 +58,7 @@ const GroupChat = () => {
   return (
     <>
       <Navbar disconnectUser={() => chatClient.disconnectUser()} />
-      <Chat client={chatClient} theme={"messaging light"}>
+      <Chat client={chatClient} theme={"messaging dark"}>
         <div className="box">
           <div className="left-column">
             <CustomChannelList onClickAdd={() => setAddingTeamChannel(true)} />
