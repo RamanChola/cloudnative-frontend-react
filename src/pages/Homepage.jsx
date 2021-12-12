@@ -22,7 +22,49 @@ const Homepage = () => {
   const history = useHistory();
   const auth = React.useContext(AuthContext);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+  Survey.StylesManager.applyTheme("bootstrap");
+
+  var myCss = {
+    matrix: {
+      root: "table table-striped",
+    },
+    navigationButton: "button btn-lg",
+  };
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "20px",
+      }}
+    >
+      <Navbar />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "auto",
+          margin: "10px 20px",
+        }}
+      >
+        <div style={{ textAlign: "center", margin: "10px" }}>
+          Welcome To the Homepage
+        </div>
+        <Survey.Survey json={questions} css={myCss} />
+      </div>
+      <div className="above-alan">
+        Click the button below and say What can I do here ?
+      </div>
+    </div>
+  );
+=======
+	const [quizType, setQuizType] = useState(html);
+=======
   const [quizType, setQuizType] = useState(html);
+>>>>>>> upstream/main
 
   Survey.StylesManager.applyTheme("bootstrap Material");
 
@@ -33,6 +75,47 @@ const Homepage = () => {
     navigationButton: "button btn-sm",
   };
 
+<<<<<<< HEAD
+	return (
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				margin: "20px 10px",
+				gap: "20px",
+			}}
+		>
+			<Navbar />
+			<div
+				style={{
+					textAlign: "center",
+					margin: "10px",
+				}}
+			>
+				<h1>Welcome To the Homepage</h1>
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "space-between",
+						textAlign: "center",
+						backgroundColor: "black",
+					}}
+				>
+					<button onClick={() => setQuizType(html)}>html</button>
+					<button onClick={() => setQuizType(css)}>css</button>
+					<button onClick={() => setQuizType(javascript)}>javascript</button>
+					<button onClick={() => setQuizType(mongodb)}>mongodb</button>
+					<button onClick={() => setQuizType(node)}>node</button>
+					<button onClick={() => setQuizType(react)}>react</button>
+				</div>
+			</div>
+			<div className='main'>
+				<Survey.Survey json={quizType} css={myCss} />
+			</div>
+		</div>
+	);
+>>>>>>> edb7587b01b514d88ed02fe5309ca337cb5c575c
+=======
   return (
     <div
       style={{
@@ -137,6 +220,7 @@ const Homepage = () => {
       </div>
     </div>
   );
+>>>>>>> upstream/main
 };
 
 export default Homepage;
