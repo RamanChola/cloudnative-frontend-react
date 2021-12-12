@@ -34,8 +34,9 @@ export const html = {
 			questions: [
 				{
 					type: "radiogroup",
-					// name: "HTML fullform",
+					name: "que1",
 					title: "What does HTML stand for?",
+					visibleIf: "{satisfaction} > 3",
 					choices: [
 						"Hyper Tag Markup Language",
 						"Hyper Text Markup Language",
@@ -51,7 +52,7 @@ export const html = {
 			questions: [
 				{
 					type: "radiogroup",
-					// name: "keywords",
+					name: "que2",
 					title: "What is the correct syntax of doctype in HTML5?",
 					choicesOrder: "random",
 					choices: [
@@ -69,7 +70,7 @@ export const html = {
 			questions: [
 				{
 					type: "radiogroup",
-					// name: "magnacarta",
+					name: "que3",
 					title: "URL is ",
 					choicesOrder: "random",
 					choices: [
@@ -87,7 +88,7 @@ export const html = {
 			questions: [
 				{
 					type: "radiogroup",
-					// name: "magnacarta",
+					name: "que4",
 					title: "404 HTTP error is generated due to",
 					choicesOrder: "random",
 					choices: [
@@ -105,7 +106,7 @@ export const html = {
 			questions: [
 				{
 					type: "radiogroup",
-					// name: "magnacarta",
+					name: "que5",
 					title: "What is the use of <hr/> tag in HTML?",
 					choicesOrder: "random",
 					choices: [
@@ -123,7 +124,7 @@ export const html = {
 			questions: [
 				{
 					type: "radiogroup",
-					// name: "magnacarta",
+					name: "que6",
 					title: "Which element is known as HTML plaintext element?",
 					choicesOrder: "random",
 					choices: ["<spacer>", "<noembed>", "<shadow>", " <plaintext>"],

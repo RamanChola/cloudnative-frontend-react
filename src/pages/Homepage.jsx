@@ -24,14 +24,27 @@ const Homepage = () => {
 
 	const [quizType, setQuizType] = useState(html);
 
-	Survey.StylesManager.applyTheme("bootstrap");
+	// Survey.StylesManager.applyTheme("bootstrap");
+
+	var defaultThemeColors = Survey.StylesManager.ThemeColors["default"];
+	defaultThemeColors["$main-color"] = "#7ff07f";
+	defaultThemeColors["$main-hover-color"] = "#6fe06f";
+	defaultThemeColors["$text-color"] = "#4a4a4a";
+	defaultThemeColors["$header-color"] = "#7ff07f";
+	defaultThemeColors["$header-background-color"] = "#4a4a4a";
+	defaultThemeColors["$body-container-background-color"] = "#f8f8f8";
 
 	var myCss = {
 		matrix: {
-			root: "table table-striped",
+			root: "table my-custom-style",
 		},
-		navigationButton: "button btn-sm",
+		navigationButton: "button btn-lg",
 	};
+
+	Survey.StylesManager.ThemeCss[".sv_default_css .my-custom-style"] =
+		"background-color: $main-color; border: 5px solid $main-hover-color;";
+
+	Survey.StylesManager.applyTheme();
 
 	return (
 		<div
@@ -55,7 +68,7 @@ const Homepage = () => {
 						display: "flex",
 						justifyContent: "space-between",
 						textAlign: "center",
-						backgroundColor: "black",
+						backgroundColor: "grey",
 					}}
 				>
 					<button onClick={() => setQuizType(html)}>html</button>
@@ -66,7 +79,7 @@ const Homepage = () => {
 					<button onClick={() => setQuizType(react)}>react</button>
 				</div>
 			</div>
-			<div className='main'>
+			<div>
 				<Survey.Survey json={quizType} css={myCss} />
 			</div>
 		</div>
