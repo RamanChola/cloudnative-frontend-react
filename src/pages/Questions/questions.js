@@ -1,6 +1,11 @@
 export const questions = {
-	title: "Basic Web Development Questions",
-	showProgressBar: "bottom",
+	title: "Basic Web Development Quiz",
+
+	completeText: "Finish",
+	pageNextText: "Continue",
+	pagePrevText: "Previous",
+	showProgressBar: "top",
+	progressBarType: "buttons",
 	showTimerPanel: "top",
 	maxTimeToFinishPage: 15,
 	maxTimeToFinish: 45,
@@ -8,14 +13,30 @@ export const questions = {
 	startSurveyText: "Start Quiz",
 	pages: [
 		{
-			questions: [
+			navigationTitle: "Start Quiz",
+
+			elements: [
 				{
-					type: "html",
-					html: "You are about to start quiz which contains questions related to web development. <br/>You have 30 seconds for every page and 60 seconds for the whole survey of 3 questions.<br/>Please click on <b>'Start Quiz'</b> button when you are ready.",
+					type: "panel",
+					elements: [
+						{
+							type: "html",
+							name: "quiz_intro",
+							html: "<article class='intro'>    <h1 class='intro__heading intro__heading--income title'>                     Web Development Quiz              </h1>    <div class='intro__body wysiwyg'>       <p> You are about to start quiz which contains questions related to web development. </p>   <p>You have 30 seconds for every page and 60 seconds for the whole survey of 3 questions.</p>  <p>Please click on <b>'Start Quiz'</b> button when you are ready.</p>  </div> </article>",
+						},
+					],
+					name: "panel1",
 				},
 			],
+			// questions: [
+			// 	{
+			// 		type: "html",
+			// 		html: "You are about to start quiz which contains questions related to web development. <br/>You have 30 seconds for every page and 60 seconds for the whole survey of 3 questions.<br/>Please click on <b>'Start Quiz'</b> button when you are ready.",
+			// 	},
+			// ],
 		},
 		{
+			navigationTitle: "Question 1",
 			questions: [
 				{
 					type: "radiogroup",
@@ -32,6 +53,7 @@ export const questions = {
 			],
 		},
 		{
+			navigationTitle: "Question 2",
 			questions: [
 				{
 					type: "radiogroup",
@@ -44,6 +66,7 @@ export const questions = {
 			],
 		},
 		{
+			navigationTitle: "Question 3",
 			questions: [
 				{
 					type: "radiogroup",

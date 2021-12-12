@@ -1,0 +1,8 @@
+.main {
+	background-color: #eee;
+	min-height: 100vh;
+	display: "flex";
+	flex: 1;
+	font-size: calc(10px-2vmin);
+	color: #000;
+}
