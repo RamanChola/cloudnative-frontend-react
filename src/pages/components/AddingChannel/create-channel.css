@@ -2,9 +2,9 @@
 	margin-bottom: 20px;
 }
 
-label {
+.create-channel-header {
 	display: block;
-	/* color: #000; */
+	color: #fff;
 	margin-bottom: 10px;
 	font-size: 15px;
 }
