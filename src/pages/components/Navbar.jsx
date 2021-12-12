@@ -42,7 +42,9 @@ export default function NavBar({ disconnectUser }) {
 
   const LogoutClickHandler = (event) => {
     auth.logout();
-    disconnectUser();
+    if (disconnectUser) {
+      disconnectUser();
+    }
     openDrawer && handleDrawerClose();
     history.push("/");
   };
@@ -50,12 +52,16 @@ export default function NavBar({ disconnectUser }) {
   return (
     <AppBar className="navbar" position="static">
       <Toolbar>
-        <NavLink to="/" style={{ textDecoration: "none", fontSize: "18px" }}>
+        <NavLink
+          to="/"
+          style={{ textDecoration: "none", color: "white", fontSize: "18px" }}
+        >
           Name
         </NavLink>
         <Button
           component={NavLink}
           className="nav-link"
+          style={{ marginLeft: "auto" }}
           exact
           // activeStyle={styles}
           to={"/chat"}
@@ -65,7 +71,7 @@ export default function NavBar({ disconnectUser }) {
         <div className="nav-links">
           <div className="body-container">
             <IconButton onClick={handleMenu}>
-              <AccountCircle />
+              <AccountCircle style={{ color: "white" }} />
             </IconButton>
             <Popper
               anchorEl={anchorEl}

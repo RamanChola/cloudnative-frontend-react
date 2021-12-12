@@ -1,7 +1,17 @@
 .MuiTableSortLabel-root.MuiTableSortLabel-active {
-    color: yellowgreen !important;
-  }
-  
-  .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon {
-    color:  yellowgreen !important;
-  }
+	color: yellowgreen !important;
+}
+
+.MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active
+	.MuiTableSortLabel-icon {
+	color: yellowgreen !important;
+}
+
+.App {
+	background-color: #eee;
+	min-height: 100vh;
+	display: "flex";
+	flex: 1;
+	font-size: calc(10px-2vmin);
+	color: #000;
+}
