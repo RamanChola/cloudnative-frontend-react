@@ -52,7 +52,10 @@ export default function NavBar({ disconnectUser }) {
   return (
     <AppBar className="navbar" position="static">
       <Toolbar>
-        <NavLink to="/" style={{ textDecoration: "none", fontSize: "18px" }}>
+        <NavLink
+          to="/"
+          style={{ textDecoration: "none", color: "white", fontSize: "18px" }}
+        >
           Name
         </NavLink>
         <Button
@@ -68,7 +71,7 @@ export default function NavBar({ disconnectUser }) {
         <div className="nav-links">
           <div className="body-container">
             <IconButton onClick={handleMenu}>
-              <AccountCircle />
+              <AccountCircle style={{ color: "white" }} />
             </IconButton>
             <Popper
               anchorEl={anchorEl}

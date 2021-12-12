@@ -1,17 +1,14 @@
 .navbar {
-    background-color: #fff !important;
+    background-color: #000 !important;
     box-shadow: none;
     border-radius: 0 0 3px 3px;
-}
-
-.nav-links {
-    margin-left: auto;
+    color: #fff !important;
 }
 
 .nav-link {
     font-size: 14px;
-    margin: 0 20px !important;
     margin-left: auto;
+    color: #fff !important;
 }
 
 .body-container {
