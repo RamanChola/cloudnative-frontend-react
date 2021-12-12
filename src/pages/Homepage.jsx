@@ -55,7 +55,7 @@ const Homepage = () => {
 						display: "flex",
 						justifyContent: "center",
 						// margin: "10px",
-						gap: "10px",
+						gap: "25px",
 						textAlign: "center",
 						color: "black",
 					}}
