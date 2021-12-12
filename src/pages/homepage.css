@@ -29,3 +29,11 @@
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 } */
+.main {
+	background-color: #eee;
+	min-height: 100vh;
+	display: "flex";
+	flex: 1;
+	font-size: calc(10px-2vmin);
+	color: #000;
+}
