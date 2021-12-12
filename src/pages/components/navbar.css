@@ -1,21 +1,21 @@
 .navbar {
-    background-color: #000 !important;
-    box-shadow: none;
-    border-radius: 0 0 3px 3px;
-    color: #fff !important;
+	background-color: #ffffff !important;
+	box-shadow: none;
+	border-radius: 0 0 3px 3px;
+	color: #fff !important;
 }
 
 .nav-link {
-    font-size: 14px;
-    margin-left: auto;
-    color: #fff !important;
+	font-size: 14px;
+	margin-left: auto;
+	color: #000 !important;
 }
 
 .body-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin: 15px;
-    gap: 380px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	/* margin: 15px; */
+	gap: 380px;
 }
