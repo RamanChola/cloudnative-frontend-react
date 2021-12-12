@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .above-alan {
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
@@ -30,13 +29,3 @@
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 } */
-=======
-.main {
-	background-color: #eee;
-	min-height: 100vh;
-	display: "flex";
-	flex: 1;
-	font-size: calc(10px-2vmin);
-	color: #000;
-}
->>>>>>> edb7587b01b514d88ed02fe5309ca337cb5c575c
